@@ -68,12 +68,12 @@ def test_code(test_case):
 
     ## KUKA KR210 ##
     #DH Parameters
-    DH_Table = {alpha0:     0,   a0:      0,   d1:  0.75,
-                alpha1: -pi/2,   a1:   0.35,   d2:     0,   q2: q2-pi/2,
-                alpha2:     0,   a2:   1.25,   d3:     0,
-                alpha3: -pi/2,   a3: -0.054,   d4:  1.50,
-                alpha4:  pi/2,   a4:      0,   d5:     0,
-                alpha5: -pi/2,   a5:      0,   d6:     0,
+    DH_Table = {alpha0:     0,   a0:      0,   d1:  0.75,   q1: q1,
+                alpha1:-pi/2.,   a1:   0.35,   d2:     0,   q2:-pi/2. + q2,
+                alpha2:     0,   a2:   1.25,   d3:     0,   q3: q3,
+                alpha3:-pi/2.,   a3: -0.054,   d4:  1.50,   q4: q4,
+                alpha4: pi/2.,   a4:      0,   d5:     0,   q5: q5,
+                alpha5:-pi/2.,   a5:      0,   d6:     0,   q6: q6,
                 alpha6:     0,   a6:      0,   d7: 0.303,   q7: 0}
 
     # Define Transformation Matrix
@@ -123,7 +123,7 @@ def test_code(test_case):
                     [sin(y) ,  cos(y),      0],
                     [      0,      0,       1]]) #yaw
 
-    ROT_EE = ROT_x * ROT_y * ROT_z
+    ROT_EE = ROT_z * ROT_y * ROT_x
 
     # More Information can be found in KR210 FK section
     Rot_Error = ROT_z.subs(y, radians(180)) * ROT_y.subs(p, radians(-90))
@@ -227,6 +227,6 @@ def test_code(test_case):
 
 if __name__ == "__main__":
     # Change test case number for different scenarios
-    test_case_number = 2
+    test_case_number = 3
 
     test_code(test_cases[test_case_number])

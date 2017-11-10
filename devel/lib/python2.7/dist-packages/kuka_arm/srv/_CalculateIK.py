@@ -11,7 +11,9 @@ class CalculateIKRequest(genpy.Message):
   _md5sum = "db8ce58a1deaf0d1f2e7fdd257963e81"
   _type = "kuka_arm/CalculateIKRequest"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """geometry_msgs/Pose[] poses
+  _full_text = """
+
+geometry_msgs/Pose[] poses
 
 ================================================================================
 MSG: geometry_msgs/Pose
@@ -195,7 +197,8 @@ class CalculateIKResponse(genpy.Message):
   _md5sum = "cbcffe0108b8e28a6a17e35f91e89d9f"
   _type = "kuka_arm/CalculateIKResponse"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """trajectory_msgs/JointTrajectoryPoint[] points
+  _full_text = """
+trajectory_msgs/JointTrajectoryPoint[] points
 
 
 ================================================================================

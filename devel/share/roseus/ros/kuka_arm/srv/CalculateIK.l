@@ -135,7 +135,9 @@
 (setf (get kuka_arm::CalculateIKRequest :md5sum-) "e2841ca7335735bd34d77773a974ca4b")
 (setf (get kuka_arm::CalculateIKRequest :datatype-) "kuka_arm/CalculateIKRequest")
 (setf (get kuka_arm::CalculateIKRequest :definition-)
-      "geometry_msgs/Pose[] poses
+      "
+
+geometry_msgs/Pose[] poses
 
 ================================================================================
 MSG: geometry_msgs/Pose
@@ -159,6 +161,7 @@ float64 y
 float64 z
 float64 w
 ---
+
 trajectory_msgs/JointTrajectoryPoint[] points
 
 
@@ -178,7 +181,9 @@ duration time_from_start
 (setf (get kuka_arm::CalculateIKResponse :md5sum-) "e2841ca7335735bd34d77773a974ca4b")
 (setf (get kuka_arm::CalculateIKResponse :datatype-) "kuka_arm/CalculateIKResponse")
 (setf (get kuka_arm::CalculateIKResponse :definition-)
-      "geometry_msgs/Pose[] poses
+      "
+
+geometry_msgs/Pose[] poses
 
 ================================================================================
 MSG: geometry_msgs/Pose
@@ -202,6 +207,7 @@ float64 y
 float64 z
 float64 w
 ---
+
 trajectory_msgs/JointTrajectoryPoint[] points
 
 

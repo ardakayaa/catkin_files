@@ -138,7 +138,8 @@ struct Definition< ::kuka_arm::CalculateIKResponse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "trajectory_msgs/JointTrajectoryPoint[] points\n\
+    return "\n\
+trajectory_msgs/JointTrajectoryPoint[] points\n\
 \n\
 \n\
 ================================================================================\n\

@@ -138,7 +138,9 @@ struct Definition< ::kuka_arm::CalculateIKRequest_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "geometry_msgs/Pose[] poses\n\
+    return "\n\
+\n\
+geometry_msgs/Pose[] poses\n\
 \n\
 ================================================================================\n\
 MSG: geometry_msgs/Pose\n\

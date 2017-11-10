@@ -594,6 +594,12 @@ actionlib_DIR:PATH=/opt/ros/kinetic/share/actionlib/cmake
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/kinetic/share/actionlib_msgs/cmake
 
+//The directory containing a CMake configuration file for bond.
+bond_DIR:PATH=/opt/ros/kinetic/share/bond/cmake
+
+//The directory containing a CMake configuration file for bondcpp.
+bondcpp_DIR:PATH=/opt/ros/kinetic/share/bondcpp/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 
@@ -772,6 +778,9 @@ moveit_ros_warehouse_DIR:PATH=/opt/ros/kinetic/share/moveit_ros_warehouse/cmake
 //The directory containing a CMake configuration file for moveit_visual_tools.
 moveit_visual_tools_DIR:PATH=/opt/ros/kinetic/share/moveit_visual_tools/cmake
 
+//The directory containing a CMake configuration file for nodelet.
+nodelet_DIR:PATH=/opt/ros/kinetic/share/nodelet/cmake
+
 //The directory containing a CMake configuration file for object_recognition_msgs.
 object_recognition_msgs_DIR:PATH=/opt/ros/kinetic/share/object_recognition_msgs/cmake
 
@@ -781,6 +790,15 @@ octomap_msgs_DIR:PATH=/opt/ros/kinetic/share/octomap_msgs/cmake
 //Path to a library.
 onelib:FILEPATH=/usr/lib/x86_64-linux-gnu/libignition-math2.so
 
+//The directory containing a CMake configuration file for pcl_conversions.
+pcl_conversions_DIR:PATH=/opt/ros/kinetic/share/pcl_conversions/cmake
+
+//The directory containing a CMake configuration file for pcl_msgs.
+pcl_msgs_DIR:PATH=/opt/ros/kinetic/share/pcl_msgs/cmake
+
+//The directory containing a CMake configuration file for pcl_ros.
+pcl_ros_DIR:PATH=/opt/ros/kinetic/share/pcl_ros/cmake
+
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake
 
@@ -789,6 +807,12 @@ random_numbers_DIR:PATH=/opt/ros/kinetic/share/random_numbers/cmake
 
 //The directory containing a CMake configuration file for realtime_tools.
 realtime_tools_DIR:PATH=/opt/ros/kinetic/share/realtime_tools/cmake
+
+//The directory containing a CMake configuration file for rosbag.
+rosbag_DIR:PATH=/opt/ros/kinetic/share/rosbag/cmake
+
+//The directory containing a CMake configuration file for rosbag_storage.
+rosbag_storage_DIR:PATH=/opt/ros/kinetic/share/rosbag_storage/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake
@@ -817,6 +841,9 @@ roslib_DIR:PATH=/opt/ros/kinetic/share/roslib/cmake
 //The directory containing a CMake configuration file for roslint.
 roslint_DIR:PATH=/opt/ros/kinetic/share/roslint/cmake
 
+//The directory containing a CMake configuration file for roslz4.
+roslz4_DIR:PATH=/opt/ros/kinetic/share/roslz4/cmake
+
 //The directory containing a CMake configuration file for rospack.
 rospack_DIR:PATH=/opt/ros/kinetic/share/rospack/cmake
 
@@ -832,6 +859,12 @@ rviz_visual_tools_DIR:PATH=/opt/ros/kinetic/share/rviz_visual_tools/cmake
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
 
+//Value Computed by CMake
+sensor_stick_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/sensor_stick
+
+//Value Computed by CMake
+sensor_stick_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/sensor_stick
+
 //The directory containing a CMake configuration file for shape_msgs.
 shape_msgs_DIR:PATH=/opt/ros/kinetic/share/shape_msgs/cmake
 
@@ -840,6 +873,9 @@ simple_arm_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/simple_arm
 
 //Value Computed by CMake
 simple_arm_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/simple_arm
+
+//The directory containing a CMake configuration file for smclib.
+smclib_DIR:PATH=/opt/ros/kinetic/share/smclib/cmake
 
 //The directory containing a CMake configuration file for srdfdom.
 srdfdom_DIR:PATH=/opt/ros/kinetic/share/srdfdom/cmake
@@ -867,6 +903,9 @@ tf_DIR:PATH=/opt/ros/kinetic/share/tf/cmake
 
 //The directory containing a CMake configuration file for tf_conversions.
 tf_conversions_DIR:PATH=/opt/ros/kinetic/share/tf_conversions/cmake
+
+//The directory containing a CMake configuration file for topic_tools.
+topic_tools_DIR:PATH=/opt/ros/kinetic/share/topic_tools/cmake
 
 //The directory containing a CMake configuration file for trajectory_msgs.
 trajectory_msgs_DIR:PATH=/opt/ros/kinetic/share/trajectory_msgs/cmake
@@ -1036,7 +1075,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

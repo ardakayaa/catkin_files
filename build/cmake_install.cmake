@@ -120,6 +120,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/robond/catkin_ws/build/first_package/cmake_install.cmake")
   include("/home/robond/catkin_ws/build/simple_arm/cmake_install.cmake")
   include("/home/robond/catkin_ws/build/RoboND-Kinematics-Project/gazebo_grasp_plugin/cmake_install.cmake")
+  include("/home/robond/catkin_ws/build/sensor_stick/cmake_install.cmake")
   include("/home/robond/catkin_ws/build/RoboND-Kinematics-Project/kuka_arm/cmake_install.cmake")
   include("/home/robond/catkin_ws/build/RoboND-Kinematics-Project/kr210_claw_moveit/cmake_install.cmake")
 

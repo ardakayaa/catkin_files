@@ -79,6 +79,8 @@ class CalculateIKRequest {
   static messageDefinition() {
     // Returns full string definition for message
     return `
+    
+    
     geometry_msgs/Pose[] poses
     
     ================================================================================
@@ -188,6 +190,7 @@ class CalculateIKResponse {
   static messageDefinition() {
     // Returns full string definition for message
     return `
+    
     trajectory_msgs/JointTrajectoryPoint[] points
     
     
